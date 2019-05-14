@@ -33,8 +33,8 @@ do_install(){
   # ldd ./bin/concourse shows that it references libraries outside of habitat so patching the binaries
   # >> https://forums.habitat.sh/t/when-to-patchelf/1099
   patchelf --interpreter "$(pkg_path_for glibc)/lib64/ld-linux-x86-64.so.2" "${pkg_prefix}/bin/concourse"
-  patchelf --set-rpath "$(pkg_path_for glibc)/lib64":/lib64 "${pkg_prefix}/bin/concourse"
+#  patchelf --set-rpath "$(pkg_path_for glibc)/lib64":/lib64 "${pkg_prefix}/bin/concourse"
   # Garden is now its own binary in v5+ so patching that as well
   patchelf --interpreter "$(pkg_path_for glibc)/lib64/ld-linux-x86-64.so.2" "${pkg_prefix}/bin/gdn"
-  patchelf --set-rpath "$(pkg_path_for glibc)/lib64":/lib64 "${pkg_prefix}/bin/gdn"
+#  patchelf --set-rpath "$(pkg_path_for glibc)/lib64":/lib64 "${pkg_prefix}/bin/gdn"
 }
