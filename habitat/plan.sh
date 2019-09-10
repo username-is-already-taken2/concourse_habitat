@@ -1,13 +1,13 @@
 pkg_name=concourse
 pkg_origin=digitalgaz
-pkg_version="5.4.1"
+pkg_version="5.5.0"
 pkg_maintainer="Gary Bright <digitalgaz@hotmail.com>"
 pkg_license=('Apache-2.0')
 pkg_description="CI that scales with your project"
 pkg_upstream_url="https://concourse.ci"
 pkg_source="https://github.com/${pkg_name}/${pkg_name}/releases/download/v${pkg_version}/${pkg_name}-${pkg_version}-linux-amd64.tgz"
 pkg_filename="${pkg_name}-linux-amd64.tgz"
-pkg_shasum="74711d5825ac831fbbe6c3e7dbce81d661da1c565bed382da75acfaae8c92ff7"
+pkg_shasum="d347c5f3b0f529f733fb76f8e15508e033286376ce62852fcf16112e8ecf2772"
 
 pkg_deps=(
   core/glibc
