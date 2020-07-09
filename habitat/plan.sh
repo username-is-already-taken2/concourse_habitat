@@ -7,7 +7,7 @@ pkg_description="CI that scales with your project"
 pkg_upstream_url="https://concourse.ci"
 pkg_source="https://github.com/${pkg_name}/${pkg_name}/releases/download/v${pkg_version}/${pkg_name}-${pkg_version}-linux-amd64.tgz"
 pkg_filename="${pkg_name}-linux-amd64.tgz"
-pkg_shasum="d347c5f3b0f529f733fb76f8e15508e033286376ce62852fcf16112e8ecf2772"
+pkg_shasum="7179ad40fe0c330de65d019f90c4a946fb07efb19c7af69edd71e5de5eb7d961"
 
 pkg_deps=(
   core/glibc
